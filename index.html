@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="assets/LSG logo.png" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <img src="assets/LSG logo.png" style="width: 130px; height: 70px" />
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Leopold Sokoudjou</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Leopold profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Leopold Sokoudjou</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Leopold-Sokoudjou-Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/leopold-sokoudjou/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/SOKOUDJOU-LEOPOLD'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <!-- style="width: 20rem; height: 20rem" -->
+          <img
+            src="./assets/about.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              As a passionate software engineer, I navigate the entire software
+              development lifecycle from requirement gathering to deployment. My
+              expertise spans various domains, including API development, cloud
+              computing, and data analysis. I am equally interested in
+              artificial intelligence and machine learning, continually
+              exploring how these technologies can be harnessed to solve complex
+              problems. Beyond my technical skills, I am a dedicated teacher,
+              sharing my knowledge with aspiring developers in my spare time.
+              When I'm not immersed in code, I enjoy expressing my creativity
+              through drawing and exploring the great outdoors through hiking.
+              Each experience enriches my perspective, fueling my innovative
+              approach to software development.
+            </p>
+            <h2>Skills:</h2>
+            <br />
+            <div class="skill-set">
+              <div class="skill-item">Java</div>
+              <div class="skill-item">Python</div>
+              <div class="skill-item">JavaScript</div>
+              <div class="skill-item">HTML/CSS</div>
+              <div class="skill-item">Node JS</div>
+              <div class="skill-item">Spring</div>
+              <div class="skill-item">Django</div>
+              <div class="skill-item">React</div>
+              <div class="skill-item">RESTful</div>
+              <div class="skill-item">NoSQL</div>
+              <div class="skill-item">SQL</div>
+              <div class="skill-item">AWS</div>
+              <div class="skill-item">Git</div>
+              <div class="skill-item">TypeScript</div>
+              <div class="skill-item">Express JS</div>
+              <div class="skill-item">Agile Methodology</div>
+              <div class="skill-item">Docker</div>
+              <div class="skill-item">Problem Solving</div>
+              <div class="skill-item">Communication</div>
+              <div class="skill-item">Teamwork</div>
+              <div class="skill-item">Adaptability</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <!---->
+        <div class="about-containers about-containers-exp">
+          <div class="details-container">
+            <div class="exp-header">
+              <img src="./assets/ksu logo.png" class="exp-logo" />
+              <div class="in-header">
+                <h3>KSU SMART CENTER</h3>
+                <h4>Tutor</h4>
+                <h5>Sep 2023 - Present</h5>
+              </div>
+            </div>
+            <p></p>
+            <br />
+            <p></p>
+            <div class="in-header">
+              <ul>
+                <li>
+                  Deliver clear and interactive tutoring sessions, explaining
+                  complex concepts in an accessible manner to help students
+                  understand and retain information in Maths, Physics and
+                  Computer Science.
+                </li>
+                <li>
+                  Offer additional support and resources, such as practice
+                  problems and study guides, to reinforce learning and assist
+                  students with challenging topics.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="details-container">
+            <div class="exp-header">
+              <img src="./assets/Afriland logo.jpg" class="exp-logo" />
+              <div class="in-header">
+                <h3>Afriland First Bank</h3>
+                <h4>Software Engineer</h4>
+                <h5>Aug 2022 - Aug 2023</h5>
+              </div>
+            </div>
+            <p></p>
+            <br />
+            <p></p>
+            <div class="in-header">
+              <ul>
+                <li>
+                  Collaborated with stakeholders to understand business needs,
+                  gather requirements, and translate them into technical
+                  specifications for banking applications.
+                </li>
+                <li>
+                  Designed, developed, and maintained banking applications like
+                  <strong>SARA</strong> and systems, ensuring they are secure,
+                  scalable, and efficient.
+                </li>
+                <li>
+                  Written clean, efficient code, participated in code reviews,
+                  and performed unit and integration testing to ensure the
+                  quality and reliability of the software.
+                </li>
+                <li>
+                  Stay updated with the latest technologies, tools, and best
+                  practices in software development to enhance skills and
+                  improve project outcomes.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="details-container">
+            <div class="exp-header">
+              <img src="./assets/pkf rc logo.jpeg" class="exp-logo" />
+              <div class="in-header">
+                <h3>PKFOKAM RESEARCH CENTER</h3>
+                <h4>Software Engineer Intern</h4>
+                <h5>May 2022 - Aug 2022</h5>
+              </div>
+            </div>
+            <p></p>
+            <br />
+            <p></p>
+            <div class="in-header">
+              <ul>
+                <li>
+                  Worked as a Java Backend developer assisting in most of the
+                  projects like a campus portal app and a Back Office just to
+                  name a few. But my internship was mostly centered in learning
+                  the art of Project Design.
+                </li>
+                <li>
+                  Developed a comprehensive campus portal software utilizing
+                  Java, JavaFX, and MySQL, serving 100+ students and faculty
+                  members, resulting in a 40% increase in overall campus
+                  productivity and communication efficiency.
+                </li>
+                <li>
+                  Optimized database queries and indexing, leading to a 25%
+                  improvement in system response time, ensuring rapid access to
+                  critical information for students and staff.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="details-container">
+            <div class="exp-header">
+              <img src="./assets/EE SA.jpeg" class="exp-logo" />
+              <div class="in-header">
+                <h3>Express Exchange S.A</h3>
+                <h4>Software Developer Intern</h4>
+                <h5>May 2021 - Aug 2021</h5>
+              </div>
+            </div>
+            <p></p>
+            <br />
+            <p></p>
+            <div class="in-header">
+              <ul>
+                <li>
+                  Worked on an e-banking application and the company's
+                  back-office application using the Spring framework, serving
+                  over 200 clients and facilitating activity tracking.
+                </li>
+                <li>
+                  Developed modules for client account management, transaction
+                  tracking, and financial reporting to ensure accurate and
+                  up-to-date information for back-office staff.
+                </li>
+                <li>
+                  Enhanced client support by providing reliable data solutions
+                  that streamlined operations and improved client service.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="details-container">
+            <div class="exp-header">
+              <img src="./assets/Bytes Club Logo.jpg" class="exp-logo" />
+              <div class="in-header">
+                <h3>Bytes Club</h3>
+                <h4>Technical Content Manager</h4>
+                <h5>Jan 2021 - Dec 2022</h5>
+              </div>
+            </div>
+            <p></p>
+            <br />
+            <p></p>
+            <div class="in-header">
+              <ul>
+                <li>
+                  Led initiatives to guide motivated newbies into the tech
+                  world, providing them with a strong foundation.
+                </li>
+                <li>
+                  Managed the creation and delivery of educational content to
+                  equip members with essential tech knowledge and skills.
+                </li>
+                <li>
+                  Focused on fostering a supportive environment for skill
+                  development and encouraging continued learning among club
+                  members.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!---->
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#education'"
+      />
+    </section>
+    <!---->
+    <section id="education">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Education</h1>
+      <div class="experience-details-container">
+        <div class="about-containers about-containers-exp">
+          <div class="details-container">
+            <div class="exp-header">
+              <img
+                style="border: 1px solid"
+                src="./assets/headstarter logo.jpeg"
+                class="exp-logo"
+              />
+              <div class="in-header">
+                <h3>HeadStarter Apprenticeship</h3>
+                <h4>Participant</h4>
+                <h5>July 2024 - Sep 2024</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-containers about-containers-exp">
+          <div class="details-container">
+            <div class="exp-header">
+              <img
+                style="border: 1px solid"
+                src="./assets/codepath logo.png"
+                class="exp-logo"
+              />
+              <div class="in-header">
+                <h3>CodePath</h3>
+                <h4>Alumni</h4>
+                <h5>April 2023 - Present</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-containers about-containers-exp">
+          <div class="details-container">
+            <div class="exp-header">
+              <img src="./assets/KSU_Logo.png" class="exp-logo" />
+              <div class="in-header">
+                <h3>KENNESAW STATE UNIVERSITY</h3>
+                <h4>Bachelor's Degree in Computer Science</h4>
+                <h5>Jan 2021 - Dec 2024</h5>
+                <h5><strong>GPA: </strong> 4.0/4.0</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---->
+    <p></p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <p></p>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers project-container">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/campus portal.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Campus Portal</h2>
+            <p>
+              Desktop app that provides a user-friendly interface for managing
+              various aspects of a school, including student information and
+              more.
+            </p>
+            <br />
+            <p><strong>stack:</strong> JAVA, JAVAFX, CSS, SQL</p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SOKOUDJOU-LEOPOLD/Sekud-Project/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                style="height: 190px"
+                src="./assets/pig game.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Pig Game</h2>
+            <p>
+              This is a simple yet exciting dice game where players take turns
+              rolling a die to accumulate points. The first player to reach 100
+              points wins the game.
+            </p>
+            <br />
+            <p><strong>stack:</strong> JavaScript, HTML, CSS</p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SOKOUDJOU-LEOPOLD/Pig-Game'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://sokoudjou-leopold.github.io/Pig-Game/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/library system.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Library M. System
+            </h2>
+            <p>
+              Designed to facilitate effortless cataloging, streamline lending
+              processes, and provide real-time access to resources, all through
+              an intuitive and user-friendly interface.
+            </p>
+            <br />
+            <p>
+              <strong>stack:</strong> JAVA, Spring Boot, SpringREST, Postman,
+              SQL
+            </p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SOKOUDJOU-LEOPOLD/Library_Management_System'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/SARA.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">SARA</h2>
+            <p>
+              Developed a location-based bank branch finder for SARA Mobile App
+              utilizing Java and Flutter, which facilitated customers in finding
+              nearby branches.
+            </p>
+            <br />
+            <p><strong>stack:</strong> JAVA, Spring, REACT, Flutter, MongoDB</p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://play.google.com/store/apps/details?id=com.icafbmobilebanking&hl=en_US'"
+              >
+                View
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- To access more projects-->
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/SOKOUDJOU-LEOPOLD?tab=repositories'"
+          >
+            <br />
+            Other Projects
+            <br /><br />
+          </button>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:leopoldgatsing@gmail.com"
+              >leopoldgatsing@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/leopold-sokoudjou/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2022 Leopold Sokoudjou. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
